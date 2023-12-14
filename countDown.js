@@ -40,3 +40,34 @@ function App() {
 }
 
 export default App;
+
+
+/*
+1.Import Statements:
+
+Import the necessary React hooks (useEffect, useRef, useState) from the React library.
+Functional Component App:
+
+2.Define a functional component named App.
+
+3.State Initialization:
+
+Initialize state using the useState hook to manage the countdown value. The initial value is set to 10.
+Ref Initialization:
+
+4.Create a ref using the useRef hook to store the interval ID.
+
+5.useEffect for Cleanup:
+
+Use the useEffect hook with an empty dependency array to clean up the interval when the component is unmounted. 
+The return function clears the interval using the stored ID.
+
+6.handleStartButtonClick Function:
+
+7.Define a function handleStartButtonClick to handle the click event of the "Start" button.
+Inside this function:
+
+8.Start an interval using setInterval.
+Within the interval, update the countdown state using the functional form of setCountdown.
+If the countdown reaches 0, clear the interval and reset the countdown to 10.
+*/ 
